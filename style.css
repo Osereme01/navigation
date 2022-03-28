@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "montserrat", sans-serif;
+}
+
+nav{
+    height: 75px;
+    width: 100%;
+    background-color: rgb(2, 121, 229);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul li a{
+    
+    display: block;
+    background: rgb(2, 121, 229);
+    
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    background: rgb(2, 121, 229);
+}
+
+.logo{
+    font-size: 30px;
+    line-height: 75px;
+    padding-left: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.list{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 57px;
+    background: #2A3B51;
+    float: right;
+}
+
+.list li {
+opacity: 1;
+line-height: 30px;
+margin: 0px 0;
+transition: all .5s;
+}
+
+.list li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.list li a.home, .list li a:hover{
+color: #2A3B51;
+transition: 0.5s;
+}
+
+@media only screen and (min-width:900px){
+    .container{
+        margin-left: 25px;
+    }
+
+    nav{
+        height: 100px;
+    
+    }
+
+.list{
+    position: relative;
+    height: 100px;
+top: 0;
+background: none;
+float: right;
+text-align: right;
+margin-right: 25px;
+transition: none;
+}
+
+.list li{
+    display: inline-block;
+    opacity: 1;
+    line-height: 100px;
+    margin: 0 20px;
+}
+
+
+}
